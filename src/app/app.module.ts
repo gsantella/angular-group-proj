@@ -18,6 +18,7 @@ import { BenComponent3Component } from './ben-component3/ben-component3.componen
 import { GuidoComponent3Component } from './guido-component3/guido-component3.component';
 import { GuidoComponent2Component } from './guido-component2/guido-component2.component';
 import { GuidoComponent1Component } from './guido-component1/guido-component1.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { GuidoComponent1Component } from './guido-component1/guido-component1.co
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
