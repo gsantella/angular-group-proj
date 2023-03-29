@@ -20,6 +20,11 @@ import { GuidoComponent3Component } from './guido-component3/guido-component3.co
 import { GuidoComponent2Component } from './guido-component2/guido-component2.component';
 import { GuidoComponent1Component } from './guido-component1/guido-component1.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NiaComponentComponent } from './nia-component/nia-component.component';
+import { BenComponentComponent } from './ben-component/ben-component.component';
+import { StevenComponentComponent } from './steven-component/steven-component.component';
+import { IsaiahComponentComponent } from './isaiah-component/isaiah-component.component';
+import { GuidoComponentComponent } from './guido-component/guido-component.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +43,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     BenComponent3Component,
     GuidoComponent3Component,
     GuidoComponent2Component,
-    GuidoComponent1Component
+    GuidoComponent1Component,
+    NiaComponentComponent,
+    BenComponentComponent,
+    StevenComponentComponent,
+    IsaiahComponentComponent,
+    GuidoComponentComponent
   ],
   imports: [
     BrowserModule,

@@ -371,58 +371,16 @@
 <!-- * * * * * * * * * * End of Placeholder * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
-<mat-grid-list cols="3" rowHeight="1:1">
-    
-  <mat-grid-tile>
-    <app-nia-component1></app-nia-component1>
-  </mat-grid-tile>
-  <mat-grid-tile>
-    <app-nia-component2></app-nia-component2>
-  </mat-grid-tile>
-  <mat-grid-tile>
-    <app-nia-component3></app-nia-component3>
-  </mat-grid-tile>
+<nav>
+  <ul>
+    <li><a routerLink="/nia" routerLinkActive="active" ariaCurrentWhenActive="page">Nia</a></li>
+    <li><a routerLink="/ben" routerLinkActive="active" ariaCurrentWhenActive="page">Ben</a></li>
+    <li><a routerLink="/steven" routerLinkActive="active" ariaCurrentWhenActive="page">Steven</a></li>
+    <li><a routerLink="/isaiah" routerLinkActive="active" ariaCurrentWhenActive="page">Isaiah</a></li>
+    <li><a routerLink="/guido" routerLinkActive="active" ariaCurrentWhenActive="page">Guido</a></li>
+  </ul>
+</nav>
 
-  <mat-grid-tile>
-    <app-steven-component1></app-steven-component1>
-  </mat-grid-tile>
-  <mat-grid-tile>
-    <app-steven-component2></app-steven-component2>
-  </mat-grid-tile>
-  <mat-grid-tile>
-    <app-steven-component3></app-steven-component3>
-  </mat-grid-tile>
-  
-  <mat-grid-tile>
-    <app-ben-component1></app-ben-component1>
-  </mat-grid-tile>
-  <mat-grid-tile>
-    <app-ben-component2></app-ben-component2>
-  </mat-grid-tile>
-  <mat-grid-tile>
-    <app-ben-component3></app-ben-component3>
-  </mat-grid-tile>
 
-  <mat-grid-tile>
-    <app-guido-component1></app-guido-component1>
-  </mat-grid-tile>
-  <mat-grid-tile>
-    <app-guido-component2></app-guido-component2>
-  </mat-grid-tile>
-  <mat-grid-tile>
-    <app-guido-component3></app-guido-component3>
-  </mat-grid-tile>
-
-  <mat-grid-tile>
-    <app-isaiah-component1></app-isaiah-component1>
-  </mat-grid-tile>
-  <mat-grid-tile>
-    <app-isaiah-component2></app-isaiah-component2>
-  </mat-grid-tile>
-  <mat-grid-tile>
-    <app-isaiah-component3></app-isaiah-component3>
-  </mat-grid-tile>
-
-</mat-grid-list>
 
 <router-outlet></router-outlet>
