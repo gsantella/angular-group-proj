@@ -25,6 +25,7 @@ import { BenComponentComponent } from './ben-component/ben-component.component';
 import { StevenComponentComponent } from './steven-component/steven-component.component';
 import { IsaiahComponentComponent } from './isaiah-component/isaiah-component.component';
 import { GuidoComponentComponent } from './guido-component/guido-component.component';
+import { Nia2ComponentComponent } from './nia2-component/nia2-component.component';
 
 @NgModule({
   declarations: [
@@ -45,10 +46,12 @@ import { GuidoComponentComponent } from './guido-component/guido-component.compo
     GuidoComponent2Component,
     GuidoComponent1Component,
     NiaComponentComponent,
+    Nia2ComponentComponent,
     BenComponentComponent,
     StevenComponentComponent,
     IsaiahComponentComponent,
-    GuidoComponentComponent
+    GuidoComponentComponent,
+    Nia2ComponentComponent
   ],
   imports: [
     BrowserModule,
