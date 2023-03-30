@@ -7,19 +7,30 @@ import { Component, Input } from '@angular/core';
 })
 export class NiaComponent1Component {
 
-  celTemp = 'celTemp'
-  sub1 = 'sub1'
-  res1 = 'res1' 
-  farTemp = 'farTemp'
-  sub2 = 'sub2'
-  res2 = 'res2'
+  celTemp = '';
+  farTemp = '';
+  res1 = '';
 
-  alert() {
-    
-  }
 
-  cToF() {
-    
+  alert1() {
+    window.alert('Input a temp in celcius and hit submit to see it in fahrenheit!');
   }
+ 
+ 
+  alert2() {
+    window.alert('Input a temp in fahrenheit and hit submit to see it in celcius!');
+  }
+ 
+ 
+  cToF(){
+    this.res1 = this.celTemp * (9/5) + 32
+  }
+ 
+ 
+  fToC(){
+ 
+ 
+  }
+ 
 
 }
