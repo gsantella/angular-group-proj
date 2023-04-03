@@ -8,11 +8,14 @@ import { HttpClient } from '@angular/common/http';
 })
 export class GuidoComponent2Component {
   
+  ispOfIP:String = 'default'
+
   constructor(private httpClient: HttpClient){}
 
   grabDataFromAPIWrongWay() {
     this.httpClient.get("http://ip-api.com/json/").subscribe( res => {
       console.log(res)
+      this.ispOfIP = 'Breezeline' //res.isp ?? 'No ISP found'
     })
   }
 }
