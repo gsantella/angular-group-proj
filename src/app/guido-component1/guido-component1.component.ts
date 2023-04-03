@@ -8,6 +8,10 @@ import { Component } from '@angular/core';
 export class GuidoComponent1Component {
   
   // data for TextBox
-  dataForTextBox:String = "default"
+  dataForTextBox:String = "cheese sandwich"
+
+  onButton1() {
+    alert(`value of dataForTextBox = ${this.dataForTextBox}`)
+  }
 
 }
