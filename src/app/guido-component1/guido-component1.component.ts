@@ -8,6 +8,6 @@ import { Component } from '@angular/core';
 export class GuidoComponent1Component {
   
   // data for TextBox
-  dataForTextbox:String = "default"
+  dataForTextBox:String = "default"
 
 }

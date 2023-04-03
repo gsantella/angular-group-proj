@@ -23,7 +23,7 @@ export class NiaComponent1Component {
  
  
   cToF(){
-    this.res1 = this.celTemp * (9/5) + 32
+    //this.res1 = this.celTemp * (9/5) + 32
   }
  
  
