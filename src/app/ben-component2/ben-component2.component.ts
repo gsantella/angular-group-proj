@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./ben-component2.component.css']
 })
 export class BenComponent2Component {
+dataForTextBox:String = "I like oreos :D"
 
+onButton1(){
+  alert(`value of dataForTextBox = ${this.dataForTextBox}`)
+}
 }
