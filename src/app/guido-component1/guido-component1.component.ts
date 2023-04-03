@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./guido-component1.component.css']
 })
 export class GuidoComponent1Component {
+  
+  // data for TextBox
+  dataForTextbox:String = "default"
 
 }
