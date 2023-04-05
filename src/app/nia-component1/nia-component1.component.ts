@@ -7,8 +7,8 @@ import { Component} from '@angular/core';
 })
 export class NiaComponent1Component {
 
-  celTemp: number;
-  farTemp: number;
+  celTemp: number = 0;
+  farTemp: number = 0;
 
 
   alert1() {
@@ -27,7 +27,7 @@ export class NiaComponent1Component {
  
  
   fToC(){
-    this.celTemp = (this.farTemp - 32) * (5/9);
+    this.celTemp = (this.farTemp - 32) * (5/9); 
  
   }
  
