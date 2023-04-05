@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class NiaComponent2Component {
 
+  dataForTextBox: String = "Hi"
+
+  onButton1(){
+    alert(`value of datForTextBox = ${this.dataForTextBox}`)
+  }
 }

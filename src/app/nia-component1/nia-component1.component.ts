@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component} from '@angular/core';
 
 @Component({
   selector: 'app-nia-component1',
@@ -7,9 +7,8 @@ import { Component, Input } from '@angular/core';
 })
 export class NiaComponent1Component {
 
-  celTemp = '';
-  farTemp = '';
-  res1 = '';
+  celTemp: number;
+  farTemp: number;
 
 
   alert1() {
@@ -23,12 +22,12 @@ export class NiaComponent1Component {
  
  
   cToF(){
-    //this.res1 = this.celTemp * (9/5) + 32
+    this.farTemp = this.celTemp * (9/5) + 32;
   }
  
  
   fToC(){
- 
+    this.celTemp = (this.farTemp - 32) * (5/9);
  
   }
  
