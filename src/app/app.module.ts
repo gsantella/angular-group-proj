@@ -29,6 +29,16 @@ import { StevenComponentComponent } from './steven-component/steven-component.co
 import { IsaiahComponentComponent } from './isaiah-component/isaiah-component.component';
 import { GuidoComponentComponent } from './guido-component/guido-component.component';
 import { Nia2ComponentComponent } from './nia2-component/nia2-component.component';
+import { NiaComponent4Component } from './nia-component4/nia-component4.component';
+import { NiaComponent5Component } from './nia-component5/nia-component5.component';
+import { BenComponent5Component } from './ben-component5/ben-component5.component';
+import { BenComponent4Component } from './ben-component4/ben-component4.component';
+import { GuidoComponent5Component } from './guido-component5/guido-component5.component';
+import { GuidoComponent4Component } from './guido-component4/guido-component4.component';
+import { IsaiahComponent4Component } from './isaiah-component4/isaiah-component4.component';
+import { IsaiahComponent5Component } from './isaiah-component5/isaiah-component5.component';
+import { StevenComponent5Component } from './steven-component5/steven-component5.component';
+import { StevenComponent4Component } from './steven-component4/steven-component4.component';
 
 @NgModule({
   declarations: [
@@ -54,7 +64,17 @@ import { Nia2ComponentComponent } from './nia2-component/nia2-component.componen
     StevenComponentComponent,
     IsaiahComponentComponent,
     GuidoComponentComponent,
-    Nia2ComponentComponent
+    Nia2ComponentComponent,
+    NiaComponent4Component,
+    NiaComponent5Component,
+    BenComponent5Component,
+    BenComponent4Component,
+    GuidoComponent5Component,
+    GuidoComponent4Component,
+    IsaiahComponent4Component,
+    IsaiahComponent5Component,
+    StevenComponent5Component,
+    StevenComponent4Component
   ],
   imports: [
     BrowserModule,
