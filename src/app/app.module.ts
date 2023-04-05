@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 
 import { MatGridListModule } from '@angular/material/grid-list';
 import { HttpClientModule } from '@angular/common/http';
+import { MatCardModule } from '@angular/material/card'; 
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -82,7 +83,8 @@ import { StevenComponent4Component } from './steven-component4/steven-component4
     BrowserAnimationsModule,
     MatGridListModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
