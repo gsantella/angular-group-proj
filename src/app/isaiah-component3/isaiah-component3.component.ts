@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./isaiah-component3.component.css']
 })
 export class IsaiahComponent3Component {
+  //Textbox Data
 
+  dataTextBox:String = "Potatoes"
 }
