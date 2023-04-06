@@ -10,9 +10,9 @@
 
 <body>
   Convert your mass!
-  <button id="buttonforBen">button</button>
-  <input id="benput" />
-  <script src="benweightconvscript.js"></script>
+  <button (click) = getKilos()>Convert your mass!</button>
+  <input [(ngModel)]="benput" type="text">
+  <!--<script src="benweightconvscript.js"></script>-->
 
   <!--
   This script places a badge on your repl's full-browser view back to your repl's cover
