@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
-let btn = document.getElementById('ShibeSummoner')
-let image = document.getElementById('locOfPic')
-btn?.addEventListener('click', function() {
+//let btn = document.getElementById('ShibeSummoner')
+//let image = document.getElementById('locOfPic')
+/*btn.addEventListener('click', function() {
   fetch("http://shibe.online/api/shibes?count=1&urls=true&httpsUrls=true")
     .then(res => res.json())
     .then(result => {
@@ -11,7 +11,7 @@ btn?.addEventListener('click', function() {
       //image.src = result.message
     })
     .catch(err=>console.log(err))
-})
+})*/
 
 @Component({
   selector: 'app-ben-component4',
@@ -19,10 +19,10 @@ btn?.addEventListener('click', function() {
   styleUrls: ['./ben-component4.component.css']
 })
 export class BenComponent4Component {
-  pictureOfAShibe:any
+  //pictureOfAShibe:any
   constructor(private httpClient:HttpClient){}
-shibePics(){
-this.pictureOfAShibe = this.httpClient.get("http://shibe.online/api/shibes?count=1&urls=true&httpsUrls=true")
+//shibePics(){
+//this.pictureOfAShibe = this.httpClient.get("http://shibe.online/api/shibes?count=1&urls=true&httpsUrls=true")
 
 }
-}
+//}
