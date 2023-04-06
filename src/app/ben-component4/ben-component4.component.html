@@ -1,5 +1,19 @@
 <body>
 <p>ben-component4 works!</p>
-<button id="ShibeSummoner">PUSH FOR SOMETHETING HURRY IT'S IMPORTANT</button> <br>
-<img id="locOfPic">
+<!--<button id="ShibeSummoner" onclick="SummonShibe()">PUSH FOR SOMETHING HURRY IT'S IMPORTANT</button> <br>
+<img id="locOfPic" alt = "Something's wrong" src = "pictureOfAShibe">
+<script>
+function SummonShibe() {
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+        var data = JSON.parse(this.responseText);
+        document.getElementById("locOfPic").src = data.results[0].picture.large
+      }
+    };
+    xhttp.open("GET", "http://shibe.online/api/shibes?count=1&urls=true&httpsUrls=true", true);
+    xhttp.send();
+  }
+</script>-->
+
 </body>
