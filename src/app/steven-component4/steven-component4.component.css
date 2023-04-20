@@ -1,0 +1,20 @@
+mat-card{
+    color: black;
+    text-align: center;
+
+}
+input{
+    font-weight: bold;
+    margin-bottom: 4%;
+    text-align: center;
+}
+mat-card-title{
+    text-align: center;
+    background-color:palevioletred ;
+}
+mat-card-content, mat-card-footer{
+    color: black;
+    font-weight: bold;
+    background-color:rebeccapurple;
+}
+
