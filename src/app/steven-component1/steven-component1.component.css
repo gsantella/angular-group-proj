@@ -1,7 +1,7 @@
 .rainbow-box {
     text-align: center;
-    width: 80vw;
-    height: 200px;
+    width: 100%;
+    height: 70%;
     border-radius: 5px;
     background: linear-gradient(
         90deg,
@@ -18,3 +18,10 @@
         rgba(255, 0, 0, 1) 100%
     );
 }
+img {
+    padding: 8%;
+    width: 100%;
+    max-width: 40%;
+    max-height: 70%;
+    height: auto;
+  }

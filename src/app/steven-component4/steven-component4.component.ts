@@ -17,7 +17,7 @@ export class StevenComponent4Component {
     this.httpClient.get(`https://api.punkapi.com/v2/beers/${this.getRandomNumber()}`).subscribe( res => {
       this.jsonData = res
     })
-    console.log(this.jsonData)
+
   }
     
   getRandomNumber() {
