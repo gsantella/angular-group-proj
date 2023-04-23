@@ -1,10 +1,10 @@
 <!--    https://api.punkapi.com/v2/beers    -->
 
-<mat-card style="width:100%; height: 51%">
-    <mat-card-title class="title" style="font-size: 2.5vw;"> {{title}} </mat-card-title>
+<mat-card style="width:100%; height: 99%;">
+    <mat-card-title class="title" style="font-size: 2.5vw; padding-bottom: .5%;"> {{title}} </mat-card-title>
     <mat-card-content class="content" style="height: 80%">
         <!--<input type="text" style="font-size: 2vw;" #box placeholder="Input Celsius here" name="temp">-->
-        <h2 style="font-size: 2vw; padding-bottom: 2%;"> {{jsonData[0].name}} </h2>
+        <h2 style="font-size: 2vw; padding: .25%;"> {{jsonData[0].name}} </h2>
         <p>{{jsonData[0].description}}</p>
         <p><img src="{{jsonData[0].image_url}}" height="300"></p>
 
@@ -12,5 +12,4 @@
         
 
     </mat-card-content>
-
 </mat-card>

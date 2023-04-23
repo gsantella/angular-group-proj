@@ -8,7 +8,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class StevenComponent4Component {
 
-  title = "API Caller"
+  title = "Random Beer Generator"
   jsonData:any
 
   constructor(private httpClient: HttpClient){}
@@ -19,7 +19,7 @@ export class StevenComponent4Component {
     })
     console.log(this.jsonData)
   }
-    //325 different id's
+    
   getRandomNumber() {
     return Math.floor(Math.random() * 25)
   }
