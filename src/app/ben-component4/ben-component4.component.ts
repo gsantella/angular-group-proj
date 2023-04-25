@@ -7,10 +7,15 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./ben-component4.component.css']
 })
 export class BenComponent4Component {
-  pictureOfAShibe:any
+  //pictureOfAShibe:any
   constructor(private httpClient:HttpClient){}
-shibePics(){
-this.pictureOfAShibe = this.httpClient.get("http://shibe.online/api/shibes?count=1&urls=true&httpsUrls=true")
+//shibePics(){
+//this.pictureOfAShibe = this.httpClient.get("http://shibe.online/api/shibes?count=1&urls=true&httpsUrls=true")
+//}
 
+somethingToDo:any
+getHobby(){
+this.somethingToDo = this.httpClient.get("http://www.boredapi.com/api/activity/")
 }
+
 }
