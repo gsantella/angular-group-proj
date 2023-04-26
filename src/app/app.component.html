@@ -371,17 +371,13 @@
 <!-- * * * * * * * * * * End of Placeholder * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
-<nav>
-  <ul>
-    <li><a routerLink="/ben" routerLinkActive="active" ariaCurrentWhenActive="page">Ben</a></li>
-    <li><a routerLink="/steven" routerLinkActive="active" ariaCurrentWhenActive="page">Steven</a></li>
-    <li><a routerLink="/isaiah" routerLinkActive="active" ariaCurrentWhenActive="page">Isaiah</a></li>
-    <li><a routerLink="/guido" routerLinkActive="active" ariaCurrentWhenActive="page">Guido</a></li>
-    <li><a routerLink="/nia" routerLinkActive="active" ariaCurrentWhenActive="page">Nia</a></li>
-    <li><a routerLink="/nia2" routerLinkActive="active" ariaCurrentWhenActive="page">Nia2</a></li>
-  </ul>
+<nav mat-tab-nav-bar>
+  <a mat-tab-link routerLink="/nia2">Nia</a>
+  <a mat-tab-link routerLink="/ben">Ben</a>
+  <a mat-tab-link routerLink="/steven">Steven</a>
+  <a mat-tab-link routerLink="/isaiah">Isaiah</a>
+  <a mat-tab-link routerLink="/guido">Guido</a>
 </nav>
-
 
 
 <router-outlet></router-outlet>
