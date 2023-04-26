@@ -1,1 +1,15 @@
-<p>steven-component4 works!</p>
+<!--    https://api.punkapi.com/v2/beers    -->
+
+<mat-card style="width:100%; height: 99%;">
+    <mat-card-title class="title" style="font-size: 2.5vw; padding-bottom: .5%;"> {{title}} </mat-card-title>
+    <mat-card-content class="content" style="height: 80%">
+        <!--<input type="text" style="font-size: 2vw;" #box placeholder="Input Celsius here" name="temp">-->
+        <h2 style="font-size: 2vw; padding: .25%;"> {{jsonData[0].name}} </h2>
+        <p>{{jsonData[0].description}}</p>
+        <p><img src="{{jsonData[0].image_url}}" height="300"></p>
+
+        <button mat-raised-button color="primary" style="font-size: 2vw;" (click)="grabAPIData()"> Click to call API </button>
+        
+
+    </mat-card-content>
+</mat-card>
