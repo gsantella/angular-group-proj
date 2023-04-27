@@ -12,7 +12,7 @@ export class NiaComponent4Component {
   constructor(private httpClient: HttpClient){}
 
   getjoke() {
-    this.httpClient.get("https://v2.jokeapi.dev/joke/Any").subscribe( res => {
+    this.httpClient.get("https://v2.jokeapi.dev/joke/Any?safe-mode").subscribe( res => {
       this.joke = res
     })
   }
