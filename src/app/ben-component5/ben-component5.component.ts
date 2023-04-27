@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
-
+/////////////////////////////////////////////////////////
+//I ended up not using any of these until like line 130//
+/////////////////////////////////////////////////////////
 @Component({
   selector: 'app-ben-component5',
   templateUrl: './ben-component5.component.html',
@@ -140,7 +142,7 @@ loadAnswers(Flag:number){
       [countries[i], countries[j]] = [countries[j], countries[i]]
     }
     var flagPic = document.getElementById("flagPicture") as HTMLImageElement
-    flagPic.src = `../../assets/$(countries[0])@3x.png`
+    flagPic.src = "../../assets/"+countries[0]+"@3x.png"
 
     var correctAnswer = document.getElementById("choice1") as HTMLElement
     correctAnswer.innerText = countries[1]
