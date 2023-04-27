@@ -1,11 +1,11 @@
 <p>What flag is this?</p>
-<img src="loadFlags(pickFlag())"><br>
+<img id="flagPicture" src = "" alt="Test"><br>
 <!--<img src = {{loadFlags(pickFlag, correctFlag)}} -->
 <input type="radio" id="choice1" name="flag options">
-<label for="choice1">{{loadAnswersStr(correctFlag)}}</label><br>
+<label for="choice1">1</label><br>
 <input type="radio" id="choice2" name="flag options">
-<label for="choice2">{{loadAnswers(wrong1)}}</label><br>
+<label for="choice2">2</label><br>
 <input type="radio" id="choice3" name="flag options">
 <label for="choice3">3</label><br>
 
-<button (onclick)="getResult()">Submit</button>
+<button (onclick)="guessTheFlag()">Submit</button>

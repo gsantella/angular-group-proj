@@ -32,7 +32,7 @@ wrong2= ""
     this.wrong2 = wrongFlagList[Math.floor(Math.random()*wrongFlagList.length)]
   }
 
-loadAnswers(Flag:String){
+loadAnswersStr(Flag:String){
   switch (Flag){
     case "Estonia":
       return "Estonia"
@@ -61,7 +61,7 @@ loadAnswers(Flag:String){
   }
   return "Error"
 }
-loadAnswersStr(Flag:number){
+loadAnswers(Flag:number){
   switch (Flag){
     case 0:
       return "Estonia"
@@ -122,9 +122,31 @@ loadAnswersStr(Flag:number){
   return Flag
   }
 
-  getResult(){
-    var option1 = document.getElementById("choice1")
-    var option2 = document.getElementById("choice2")
-    var option3 = document.getElementById("choice3")
+  getAnswers(){
+    var option1 = document.getElementById("choice1") as HTMLElement
+    option1.innerText=this.loadAnswers(this.correctFlag)
+    var option2 = document.getElementById("choice2") as HTMLElement
+    option2.innerText=this.loadAnswers(this.correctFlag)
+    var option3 = document.getElementById("choice3") as HTMLElement
+    option3.innerText=this.loadAnswers(this.correctFlag)
+  }
+
+  guessTheFlag(){
+    
+  var countries = ["Estonia", "France", "Germany", "Ireland", "Italy", "Monaco", "Nigeria", "Poland", "Russia", "Spain", "UK", "US"]
+  
+    for (let i = countries.length - 1; i > 0; i--){
+      const j = Math.floor(Math.random() * (i + 1));
+      [countries[i], countries[j]] = [countries[j], countries[i]]
+    }
+    var flagPic = document.getElementById("flagPicture") as HTMLImageElement
+    flagPic.src = `../../assets/$(countries[0])@3x.png`
+
+    var correctAnswer = document.getElementById("choice1") as HTMLElement
+    correctAnswer.innerText = countries[1]
+    var wrong1 = document.getElementById("choice2") as HTMLElement
+    wrong1.innerText = countries[2]
+    var wrong2 = document.getElementById("choice3") as HTMLElement
+    wrong2.innerText = countries[3]
   }
 }
