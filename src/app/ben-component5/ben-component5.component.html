@@ -1,6 +1,11 @@
-<p>ben-component5 works!</p>
-<p>Choose the flag of:</p>
-<p id="correctFlag">{{ pickFlag()}}</p>
-<button (onclick)="pickFlag()"></button>
+<p>What flag is this?</p>
+<img src="loadFlags(pickFlag())"><br>
 <!--<img src = {{loadFlags(pickFlag, correctFlag)}} -->
-<img src="loadFlags()">
+<input type="radio" id="choice1" name="flag options">
+<label for="choice1">{{loadAnswersStr(correctFlag)}}</label><br>
+<input type="radio" id="choice2" name="flag options">
+<label for="choice2">{{loadAnswers(wrong1)}}</label><br>
+<input type="radio" id="choice3" name="flag options">
+<label for="choice3">3</label><br>
+
+<button (onclick)="getResult()">Submit</button>

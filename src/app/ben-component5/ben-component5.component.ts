@@ -11,57 +11,120 @@ export class BenComponent5Component {
   
   min = Math.ceil(this.countries.length)
   max = Math.floor(0)
-  shuffleFlag = Math.floor(Math.random() * (this.max - this.min + 1) + this.min)
-
-  newRound(){
-    var correctFlag = this.pickFlag()
-  }
+  correctFlag = Math.floor(Math.random() * (this.max - this.min + 1) + this.min)
+wrong1 = ""
+wrong2= ""
 
   pickFlag(){
   //var rightIndex = Math.floor(Math.random() * (2 - 0 + 1) + 0)
   //var wrong1 = this.loadFlags(this.countries, shuffleFlag)
   //var wrong2 = this.loadFlags(this.countries, shuffleFlag)
   
-  this.shuffleFlag = Math.floor(Math.random() * (this.max - this.min + 1) + this.min)
-  return this.shuffleFlag
+  this.correctFlag = Math.floor(Math.random() * (this.max - this.min + 1) + this.min)
+  //return this.countries[this.shuffleFlag]
+
+  return this.correctFlag
   }
 
-  loadFlags(countryList:string[]){
-    var wrongFlagList = countryList.splice(countryList.indexOf(String(this.shuffleFlag), 1))
-  var min = Math.ceil(wrongFlagList.length)
-  var max = Math.floor(0)
-  var wrongFlag = Math.floor(Math.random() * (max - min + 1) + min)
-  switch (wrongFlag){
+  resetOptions(){
+    var wrongFlagList = this.countries.splice(this.countries.indexOf(String(this.correctFlag), 1))
+    this.wrong1 = wrongFlagList[Math.floor(Math.random()*wrongFlagList.length)]
+    this.wrong2 = wrongFlagList[Math.floor(Math.random()*wrongFlagList.length)]
+  }
+
+loadAnswers(Flag:String){
+  switch (Flag){
+    case "Estonia":
+      return "Estonia"
+    case "France":
+      return "France"
+    case "Germany":
+      return "Germany"
+    case "Ireland":
+      return "Ireland"
+    case "Italy":
+      return "Italy"
+    case "Monaco":
+      return "Monaco"
+    case "Nigeria":
+      return "Nigeria"
+    case "Poland":
+      return "Poland"
+    case "Russia":
+      return "Russia"
+    case "Spain":
+      return "Spain"
+    case "UK":
+      return "UK"
+    case "US":
+      return "US"
+  }
+  return "Error"
+}
+loadAnswersStr(Flag:number){
+  switch (Flag){
     case 0:
-      return "assets/Estonia@3x.png"
+      return "Estonia"
     case 1:
-      return "assets/France@3x.png"
+      return "France"
     case 2:
-      return "assets/Germany@3x.png"
+      return "Germany"
     case 3:
-      return "assets/Ireland@3x.png"
+      return "Ireland"
     case 4:
-      return "assets/Italy@3x.png"
+      return "Italy"
     case 5:
-      return "assets/Monaco@3x.png"
+      return "Monaco"
     case 6:
-      return "assets/Nigeria@3x.png"
+      return "Nigeria"
     case 7:
-      return "assets/Poland@3x.png"
+      return "Poland"
     case 8:
-      return "assets/Russia@3x.png"
+      return "Russia"
     case 9:
-      return "assets/Spain@3x.png"
+      return "Spain"
     case 10:
-      return "assets/UK@3x.png"
+      return "UK"
     case 11:
+      return "US"
+  }
+  return "Error"
+}
+
+  loadFlags(Flag:String){
+  switch (Flag){
+    case "Estonia":
+      return "assets/Estonia@3x.png"
+    case "France":
+      return "assets/France@3x.png"
+    case "Germany":
+      return "assets/Germany@3x.png"
+    case "Ireland":
+      return "assets/Ireland@3x.png"
+    case "Italy":
+      return "assets/Italy@3x.png"
+    case "Monaco":
+      return "assets/Monaco@3x.png"
+    case "Nigeria":
+      return "assets/Nigeria@3x.png"
+    case "Poland":
+      return "assets/Poland@3x.png"
+    case "Russia":
+      return "assets/Russia@3x.png"
+    case "Spain":
+      return "assets/Spain@3x.png"
+    case "UK":
+      return "assets/UK@3x.png"
+    case "US":
       return "assets/US@3x.png"
   }
 
-  return wrongFlag
+  return Flag
   }
 
-  flagPics(){
-    
+  getResult(){
+    var option1 = document.getElementById("choice1")
+    var option2 = document.getElementById("choice2")
+    var option3 = document.getElementById("choice3")
   }
 }
